@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+<div class="box">
+<div class="container">
+  
+  <div class="menu">
+
+    <div class="logo">W.</div>
+
+    <nav >
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+        </ul>
+      <ul>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">New</a></li>
+        <li class="hideOnMobile"><a href="#">Popular</a></li>
+        <li class="hideOnMobile"><a href="#">Trending</a></li>
+        <li class="hideOnMobile"><a href="#">Categories</a></li>
+        <li class ="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul> 
+    </nav> 
+
+  </div>
+  <img src="./images/image-web-3-desktop.jpg" class="bigImg"> 
+  
+
+  <div class="topic"><p>The Bright Future of Web 3.0?</p></div>
+
+  <div class="content">
+    <p >We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+      But is it really fulfilling its promise?</p>
+
+    <button>Read more</button>
+  </div>
+
+  <div class="bulletins">
+
+    <p class="new">New</p>
+    
+    <a href="#" >Hydrogen VS Electric Cars</a>
+    <p class="news ">Will hydrogen-fueled cars ever catch up to EVs?</p>   
+    <hr>
+    <br>
+    <a href="#" >The Downsides of AI Artistry</a>
+    <p class="news "> What are the possible adverse effects of on-demand AI image generation?</p>
+   <hr><br>
+    <a href="#" >Is VC Funding Drying Up?</a>  
+    <p class="news ">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+
+  </div>
+ 
+
+
+  <div class="trend one">    
+    <img src="./images/image-retro-pcs.jpg"> 
+    <p class="head">01</p>
+    <a href="#">Reviving Retro PCs</a>
+    <p class="heading">What happens when old PCs are given modern upgrades?
+    </p>
+  </div>
+
+  <div class="trend two"> 
+    <img src="./images/image-top-laptops.jpg">
+    <p class="head">02</p>
+    <a href="#">Top 10 Laptops of 2022</a>
+    <p class="heading">Our best picks for various needs and budgets.</p>
+  </div>
+
+  <div class="trend three">     
+    <img src="./images/image-gaming-growth.jpg">
+    <p class="head">03</p>
+    <a href="#">The Growth of Gaming</a>
+    <p class="heading">How the pandemic has sparked fresh opportunities.</p>
+  </div>
+ 
+
+</div>
+  <footer> 
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Robin Singh</a>.
+    </div>
+  </footer>
+</div>    
+
+<script>
+  function showSidebar(){
+    const sidebar=document.querySelector('.sidebar')
+    sidebar.style.display='flex'
+  }
+
+  function hideSidebar(){
+    const sidebar=document.querySelector('.sidebar')
+    sidebar.style.display='none'
+  }
+
+</script>
+
+</body>
+</html>
